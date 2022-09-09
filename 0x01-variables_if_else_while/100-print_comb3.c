@@ -7,16 +7,15 @@
  *
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
 	int d;
 
-	for (d = 0; d < 100; d++)
+	for (d = 1; d < 89; d++)
 	{
 		putchar((d / 10) + '0');
 		putchar((d % 10) + '0');
-		if (d != 99)
+		if (d != 88)
 		{
 			putchar(',');
 			putchar(' ');
