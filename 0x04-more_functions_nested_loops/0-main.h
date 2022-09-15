@@ -7,6 +7,8 @@
  * Return: _putchar and a newline
  */
 
+#include<stdio.h>
+
 int _putchar(char);
 void print_numbers(void);
 void print_most_numbers(void);
