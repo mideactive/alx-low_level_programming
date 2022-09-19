@@ -8,13 +8,12 @@
 */
 void _puts(char *str)
 {
-	int arr = 0;
+	int v = 0;
 
-	while (str[arr] != '\0')
-		arr++;
-
-	while (arr)
-		_putchar(str[--arr]);
-
+	while (str[v] != '\0')
+	{
+		_putchar(str[v]);
+		v++;
+	}
 	_putchar('\n');
 }
