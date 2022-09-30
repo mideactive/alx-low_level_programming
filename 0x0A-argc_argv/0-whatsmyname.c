@@ -5,11 +5,8 @@
 *@argv: Points to a string or strings of parameters
 *Return: Nothing
 */
-int main(int argc, char *argv[])
+int main(__attribute__((unused)) int argc, char *argv[])
 {
-	int i;
-
-	for (i = 0; i < argc; i++)
-	printf("%s\n", argv[i]);	
+	printf("%s\n", argv[0]);	
 	return (0);
 }
