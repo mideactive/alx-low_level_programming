@@ -6,7 +6,10 @@
 #include <unistd.h>
 
 /**
- *dog - A struction that declare the data item of a dog
+ *struct dog - A struction that declare the data item of a dog
+ *@name: Name of the dog
+ *@age: Age of the dog
+ *@owner: The owner of the dog
 */
 
 struct dog
