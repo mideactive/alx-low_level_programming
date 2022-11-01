@@ -38,4 +38,19 @@
     
     Solution:
     
-   Solving the task 1 is similar to the solution of task 0. But, there is difference task 0.
+   Solving the task 1 is similar to the solution of task 0. But, there is difference task 0. The difference is the gcc flag used.
+   . use the linux export command to save main.c inside tha $CFILE variable.
+   . open a file in which u want to write your script with the touch command, or you can open directly using the vim <file> command
+   . first line contains the shebang to make the file executable
+   . second line contains the gcc compiler code, but, the -c flag should be included to make the code compile, but doesn't link (view: man gcc).
+     followed by the -o flag to save the file to the output file main.o.
+   . save file and use the linux chmod to make the file executable
+   . problem solved....
+    
+    
+    
+    TASK (2) Assembler:- Write a script that generates the assembly code of a C code and save it in an output file.
+    
+        . The C file name will be saved in the variable $CFILE
+        . The output file should be named the same as the C file, but with the extension .s instead of .c.
+      Example: if the C file is main.c, the output file should be main.s
