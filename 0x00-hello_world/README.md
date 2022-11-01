@@ -60,14 +60,16 @@
         . The C file name will be saved in the variable $CFILE
     
         . The output file should be named the same as the C file, but with the extension .s instead of .c.
-    
+  
       Example: if the C file is main.c, the output file should be main.s
 
     solution:
     
     Just like 'task (1)', the solution of task one is also similar to that of task 2. of course, with different gcc flags.
+    
      . we can use the steps in task 0 and i to solve two. we only need to use different gcc flags. with the -c -S gcc flags,
        we can generate the assembler code of our script. The gcc man page gives better clue on this.
+    
      . task 2 solved....
     
     
@@ -78,7 +80,17 @@
     
     solution:
      
-     . this problem is also similar to the previous, just that this time around, we want our code to get to the final stage which is linking.
+     This problem is also similar to the previous, just that this time around, we want our code to get to the final stage which is linking.
        as usual, still about the flag.
-     . the gcc compiler will do the trick, though we need the -o flag to.
-     . You sure can use other flags like -Wall,-pedantic etc to check further errors. 
+    
+     . the gcc key word and the file name will do the trick.
+    
+     . You sure can use other flags like -Wall,-pedantic etc to check for further errors.
+    
+     . problem solved...
+    
+        TASK (4) :- Hello, puts.
+    
+     
+    
+    
