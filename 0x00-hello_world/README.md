@@ -72,4 +72,13 @@
     
     
     
-     TASK (3) Name: 
+     TASK (3) Name: Write a script that compiles a C file and creates an executable named cisfun.
+    
+      . The C file name will be saved in the variable $CFILE
+    
+    solution:
+     
+     . this problem is also similar to the previous, just that this time around, we want our code to get to the final stage which is linking.
+       as usual, still about the flag.
+     . the gcc compiler will do the trick, though we need the -o flag to.
+     . You sure can use other flags like -Wall,-pedantic etc to check further errors. 
