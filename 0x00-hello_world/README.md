@@ -14,7 +14,7 @@
       
  Solution:
 
-  . save the main.c file (which i have already created) to the $CFILE using the linux export command
+  . save the main.c file (an already created file) to the $CFILE using the linux export command
 
   . create 0-preprocessor file using the touch linux touch command
 
