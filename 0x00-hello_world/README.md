@@ -118,3 +118,18 @@
        . Your program should return 0
        . Your program should compile without warning when using the -Wall gcc option
      
+       Solution:
+    
+       . We can solve task 5 by using similar steps that we used or task 4, The only difference is that we will use printf instead of puts.
+       . Our printf takes two arguments, the specifier %s that displays a string, and the variable that holds the string.
+       . Save the code and compile using gcc with necessary flags.
+       . problem solved..
+    
+    
+    
+    TASK (6):- Write a C program that prints the size of various types on the computer it is compiled and run on.
+    
+       . You should produce the exact same output as in the example
+       . Warnings are allowed
+       . Your program should return 0
+       . You might have to install the package libc6-dev-i386 on your Linux to test the -m32 gcc option
