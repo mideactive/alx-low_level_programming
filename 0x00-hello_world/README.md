@@ -150,8 +150,21 @@
         . problem solved.
     
     
-     TASK (7) INTEL:- Write a script that generates the assembly code (Intel syntax) of a C code and save it in an output file.
+     TASK (7) Intel:- Write a script that generates the assembly code (Intel syntax) of a C code and save it in an output file.
+   
+         . The C file name will be saved in the variable $CFILE.
+         . The output file should be named the same as the C file, but with the extension .s instead of .c.
+         . Example: if the C file is main.c, the output file should be main.s
     
-        . The C file name will be saved in the variable $CFILE.
-        . The output file should be named the same as the C file, but with the extension .s instead of .c.
-        . Example: if the C file is main.c, the output file should be main.s
+    Solution:
+     
+         . The solution to this task is similar to that of task 1 and 2.
+         . We save our main.c file  inside the $CFILE variable using the export command.
+         . We create our 100-intel file using the touch command, or we can create and open directly using a text editor eg vim.
+         . We place our shebang at the first line of our script, then our gcc compiler code in the second line.
+         . We use the nasm=intel, -c, -S with our gcc compiler to generate an intel assembly code, and the -o flag to save our code inside the main.s              file.
+         . We save and exit the text editor, and use the chmod to make our file executable.
+         . Problem solved ...
+    
+    
+    
