@@ -96,4 +96,25 @@
      . Use the function puts
      . You are not allowed to use printf
      . Your program should end with the value 0
+    
+            Solution:
+       . Open  the 4-puts.c file with a text editor eg vim.
+       . Use the standard library <stdio.h> as the header file
+       . Describe what the code is meant to do inside a betty styled comment
+       . Our code is written inside the main function. our main function return an int, but does not take any arguments.
+       . Create a char data-type, with a pointer variable that can old a string of characters.
+       . Initialize the variable with the given string, a string is always inside a double quote. We must also escape \" the quote sign to enable "
+         display with our our string.
+       . We can now use our puts function to display our string, because we are only asked to use puts.
+       . Save the code and compile using gcc and the necessary flags.
+       . problem solved.
+    
+    
+    
+    TASK (5):- Write a C program that prints exactly with proper grammar, but the outcome is a piece of art,, followed by a new line.
+       
+       . Use the function printf
+       . You are not allowed to use the function puts
+       . Your program should return 0
+       . Your program should compile without warning when using the -Wall gcc option
      
