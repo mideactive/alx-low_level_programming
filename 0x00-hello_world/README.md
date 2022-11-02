@@ -168,3 +168,26 @@
     
     
     
+    TASK (8) :- Write a C program that prints exactly and that piece of art is useful" - Dora Korpar, 2015-10-19, followed by a new line, to the                       standard error.
+    
+         . You are not allowed to use any functions listed in the NAME section of the man (3) printf or man (3) puts
+         . Your program should return 1
+         . Your program should compile without any warnings when using the -Wall gcc option
+    
+     Solution:
+    
+     . Create and open our c file using a text editor
+     . Use the standard library <unistd.h> as our header file.
+     . Create our betty styled comment that explains what our code is used for.
+     . Create a main function that returns an int and, as a void as int argument.
+     . We create a char data-type and a varible pointer the accept a string.
+     . Our variable is intialized, with the expected output inside a double quote with a new line "\n" at the end.
+     . since we are not allowed to use printf, puts and it's associates. We will have to use the write function.
+     . The write function take three arguments; fd(file discriptor),the string or file, and the number count. use (man write).
+     . We input the necessary arguments in our write function, and end our program with a return value 0.
+     . save and exit editor.
+     . compile code using the gcc compiler with respective flags. use the -o flag to save output to the file quote and 101-quote
+     . Problem solved.
+     
+    
+    
