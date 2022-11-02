@@ -74,7 +74,7 @@
     
     
     
-     TASK (3) Name: Write a script that compiles a C file and creates an executable named cisfun.
+     TASK (3) Name:- Write a script that compiles a C file and creates an executable named cisfun.
     
       . The C file name will be saved in the variable $CFILE
     
@@ -91,7 +91,7 @@
   
     
     
-   TASK (4) :- Hello, puts: Write a C program that prints exactly "Programming is like building a multilingual puzzle, followed by a new line.
+   TASK (4) Hello, puts:- Write a C program that prints exactly "Programming is like building a multilingual puzzle, followed by a new line.
 
      . Use the function puts
      . You are not allowed to use printf
@@ -106,6 +106,7 @@
        . Initialize the variable with the given string, a string is always inside a double quote. We must also escape \" the quote sign to enable "
          display with our our string.
        . We can now use our puts function to display our string, because we are only asked to use puts.
+       . We end our program with a return value which is 0.
        . Save the code and compile using gcc and the necessary flags.
        . problem solved.
     
@@ -122,6 +123,7 @@
     
        . We can solve task 5 by using similar steps that we used or task 4, The only difference is that we will use printf instead of puts.
        . Our printf takes two arguments, the specifier %s that displays a string, and the variable that holds the string.
+       . We end our program with a return value which is 0
        . Save the code and compile using gcc with necessary flags.
        . problem solved..
     
@@ -132,4 +134,24 @@
        . You should produce the exact same output as in the example
        . Warnings are allowed
        . Your program should return 0
-       . You might have to install the package libc6-dev-i386 on your Linux to test the -m32 gcc option
+       . You might have to install the package libc6-dev-i386 on your Linux to test the -m32 gcc option.
+    
+       Solution:
+    
+        . Here, we are asked to display the size of the char,short,int etc.
+        . We create out header file with the standard library <stdio.h>
+        . We also create our betty style comments, that says what we want our code to do.
+        . Then our main function is created, to return an int and with void as argument.
+        . We can now use a printf function which takes two arguments. The first argument is our access specifier %d which prints out an int.
+          The second argument is our data-type wrap inside the sizeof function to help ascertain the sizes of our different data-types on different
+          machines eg. 64 or 32 bit machines.
+        . We end our code with a return value which is 0.
+        . We save and compile using gcc and necessary flags.
+        . problem solved.
+    
+    
+     TASK (7) INTEL:- Write a script that generates the assembly code (Intel syntax) of a C code and save it in an output file.
+    
+        . The C file name will be saved in the variable $CFILE.
+        . The output file should be named the same as the C file, but with the extension .s instead of .c.
+        . Example: if the C file is main.c, the output file should be main.s
