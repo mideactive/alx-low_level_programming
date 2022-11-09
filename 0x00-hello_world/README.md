@@ -4,7 +4,7 @@
 </head>
 <body> 
    
-<div style = "font:bold 20px Georgia">OS: linux:- ubuntu 20.4</div>
+<div style = "font:bold 20px italic Sans;text-align:center">OS: linux:- ubuntu 20.4</div>
 
 -My first alx c project: 0x00-hello_world
 
