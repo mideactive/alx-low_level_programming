@@ -1,4 +1,10 @@
-    OS: linux:- ubuntu 20.4
+<!DOCTYPE html>
+<html lang="en">
+<head><title>Readme.md</title>
+</head>
+<body> 
+   
+<div style = "font:bold 20px Georgia">OS: linux:- ubuntu 20.4</div>
 
 -My first alx c project: 0x00-hello_world
 
@@ -188,6 +194,5 @@
      . save and exit editor.
      . compile code using the gcc compiler with respective flags. use the -o flag to save output to the file quote and 101-quote
      . Problem solved.
-     
-    
-    
+</body>
+</html>
