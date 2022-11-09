@@ -1,4 +1,4 @@
-    OS: linux:- ubuntu 20.4
+    <b>OS: linux:- ubuntu 20.4</b>
 
 -My first alx c project: 0x00-hello_world
 
