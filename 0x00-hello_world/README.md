@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head><title>Readme.md</title>
-</head>
-<body> 
-   
-<div style = "font-size:20px;font-weigth:bold;font-style:italic;margin:auto;color:red">OS: linux:- ubuntu 20.4</div>
+##README.md
+OS: linux:- ubuntu 20.4
 
 -My first alx c project: 0x00-hello_world
 
