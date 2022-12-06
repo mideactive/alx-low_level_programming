@@ -29,7 +29,7 @@
   task 0 preprocessor problem solved.**
 
 
-### TASK (1) compiler :- Write a script that compiles a C file but does not link.
+### [1-compiler](https://github.com/mideactive/alx-low_level_programming/blob/master/0x00-hello_world/1-compiler) :- Write a script that compiles a C file but does not link.
     
             . The C file name will be saved in the variable $CFILE.
 
@@ -54,7 +54,7 @@
 **. problem solved....**
     
     
-   ### TASK (2) Assembler:- Write a script that generates the assembly code of a C code and save it in an output file.
+### [2-Assembler](https://github.com/mideactive/alx-low_level_programming/blob/master/0x00-hello_world/2-assembler):- Write a script that generates the assembly code of a C code and save it in an output file.
     
             . The C file name will be saved in the variable $CFILE
     
