@@ -68,8 +68,8 @@
     
 **. we can use the steps in task 0 and i to solve two. we only need to use different gcc flags. with the -c -S gcc flags,
        we can generate the assembler code of our script. The gcc man page gives better clue on this.**
-    
-**. task 2 solved....
+   
+**. task 2 solved....**
     
     
     
