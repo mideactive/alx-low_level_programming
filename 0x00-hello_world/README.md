@@ -14,7 +14,7 @@
 
       . The output should be saved as .c
       
- Solution:
+ #### Solution:
 
   . save the main.c file (an already created file) to the $CFILE using the linux export command
 
@@ -32,13 +32,13 @@
 
 
 
-    TASK (1) compiler :- Write a script that compiles a C file but does not link.
+   # TASK (1) compiler :- Write a script that compiles a C file but does not link.
     
        . The C file name will be saved in the variable $CFILE
        . The output file should be named the same as the C file, but with the extension .o instead of .c.
      Example: if the C file is main.c, the output file should be main.o  
     
-    Solution:
+   #### Solution:
     
    Solving the task 1 is similar to the solution of task 0. But, there is difference task 0. The difference is the gcc flag used.
    
@@ -56,16 +56,15 @@
    . problem solved....
     
     
-    
-    TASK (2) Assembler:- Write a script that generates the assembly code of a C code and save it in an output file.
+   # TASK (2) Assembler:- Write a script that generates the assembly code of a C code and save it in an output file.
     
         . The C file name will be saved in the variable $CFILE
     
         . The output file should be named the same as the C file, but with the extension .s instead of .c.
   
       Example: if the C file is main.c, the output file should be main.s
-
-    solution:
+   
+   #### Solution:
     
     Just like 'task (1)', the solution of task one is also similar to that of task 2. of course, with different gcc flags.
     
@@ -76,11 +75,11 @@
     
     
     
-     TASK (3) Name:- Write a script that compiles a C file and creates an executable named cisfun.
+   # TASK (3) Name:- Write a script that compiles a C file and creates an executable named cisfun.
     
       . The C file name will be saved in the variable $CFILE
     
-    solution:
+   #### Solution:
      
      This problem is also similar to the previous, just that this time around, we want our code to get to the final stage which is linking.
        as usual, still about the flag.
@@ -93,13 +92,14 @@
   
     
     
-   TASK (4) Hello, puts:- Write a C program that prints exactly "Programming is like building a multilingual puzzle, followed by a new line.
+  # TASK (4) Hello, puts:- Write a C program that prints exactly "Programming is like building a multilingual puzzle, followed by a new line.
 
      . Use the function puts
      . You are not allowed to use printf
      . Your program should end with the value 0
     
-            Solution:
+  # Solution:
+   
        . Open  the 4-puts.c file with a text editor eg vim.
        . Use the standard library <stdio.h> as the header file
        . Describe what the code is meant to do inside a betty styled comment
@@ -114,14 +114,14 @@
     
     
     
-    TASK (5):- Write a C program that prints exactly with proper grammar, but the outcome is a piece of art,, followed by a new line.
+   # TASK (5):- Write a C program that prints exactly with proper grammar, but the outcome is a piece of art,, followed by a new line.
        
        . Use the function printf
        . You are not allowed to use the function puts
        . Your program should return 0
        . Your program should compile without warning when using the -Wall gcc option
-     
-       Solution:
+    
+      #### Solution:
     
        . We can solve task 5 by using similar steps that we used or task 4, The only difference is that we will use printf instead of puts.
        . Our printf takes two arguments, the specifier %s that displays a string, and the variable that holds the string.
@@ -130,15 +130,14 @@
        . problem solved..
     
     
-    
-    TASK (6):- Write a C program that prints the size of various types on the computer it is compiled and run on.
+    # TASK (6):- Write a C program that prints the size of various types on the computer it is compiled and run on.
     
        . You should produce the exact same output as in the example
        . Warnings are allowed
        . Your program should return 0
        . You might have to install the package libc6-dev-i386 on your Linux to test the -m32 gcc option.
     
-       Solution:
+   #### Solution:
     
         . Here, we are asked to display the size of the char,short,int etc.
         . We create out header file with the standard library <stdio.h>
@@ -152,13 +151,13 @@
         . problem solved.
     
     
-     TASK (7) Intel:- Write a script that generates the assembly code (Intel syntax) of a C code and save it in an output file.
+   # TASK (7) Intel:- Write a script that generates the assembly code (Intel syntax) of a C code and save it in an output file.
    
          . The C file name will be saved in the variable $CFILE.
          . The output file should be named the same as the C file, but with the extension .s instead of .c.
          . Example: if the C file is main.c, the output file should be main.s
     
-    Solution:
+   #### Solution:
      
          . The solution to this task is similar to that of task 1 and 2.
          . We save our main.c file  inside the $CFILE variable using the export command.
@@ -169,14 +168,13 @@
          . Problem solved ...
     
     
-    
-    TASK (8) :- Write a C program that prints exactly and that piece of art is useful" - Dora Korpar, 2015-10-19, followed by a new line, to the                       standard error.
+    # TASK (8) :- Write a C program that prints exactly and that piece of art is useful" - Dora Korpar, 2015-10-19, followed by a new line, to the                       standard error.
     
          . You are not allowed to use any functions listed in the NAME section of the man (3) printf or man (3) puts
          . Your program should return 1
          . Your program should compile without any warnings when using the -Wall gcc option
     
-     Solution:
+   #### Solution:
     
      . Create and open our c file using a text editor
      . Use the standard library <unistd.h> as our header file.
@@ -190,5 +188,3 @@
      . save and exit editor.
      . compile code using the gcc compiler with respective flags. use the -o flag to save output to the file quote and 101-quote
      . Problem solved.
-</body>
-</html>
