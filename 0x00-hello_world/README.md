@@ -16,13 +16,13 @@
       
  #### Solution:
 
-**save the main.c file (an already created file) to the $CFILE using the linux export command
+** save the main.c file (an already created file) to the $CFILE using the linux export command
 
-**create 0-preprocessor file using the touch linux touch command
+** create 0-preprocessor file using the touch linux touch command
 
-**opend 0-preprocessor file with a vim text editor
+** opend 0-preprocessor file with a vim text editor
 
-**addedshebang at the first line of my script
+** addedshebang at the first line of my script
 
 **The second line of my script, contains the gcc code that runs my file through a preprocessor using the -E gcc flag and the -o gcc flag to create a        new file c.
 
