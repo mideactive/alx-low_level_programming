@@ -2,9 +2,9 @@
 
 ### OS: linux:- ubuntu 20.4
 
-# My first alx c project: 0x00-hello_world `#0969DA`
+# My first alx c project: 0x00-hello_world.
 
-   ### TASK (0) preprocessor :- writes a script that runs a c file through the preprocessor and save the result in another file.
+   ### [0-preprocessor](https://github.com/mideactive/alx-low_level_programming/blob/master/0x00-hello_world/0-preprocessor) :- writes a script that runs a c file through the preprocessor and save the result in another file.
 
             . The name of the c file is main.c
 
