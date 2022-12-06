@@ -98,7 +98,7 @@
      . You are not allowed to use printf
      . Your program should end with the value 0
     
-  ##### Solution:
+ #### Solution:
    
        . Open  the 4-puts.c file with a text editor eg vim.
        . Use the standard library <stdio.h> as the header file
