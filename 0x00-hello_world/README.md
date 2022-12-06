@@ -2,7 +2,7 @@
 
 OS: linux:- ubuntu 20.4
 
-<div align="center"><u>-My first alx c project: 0x00-hello_world</u></div>
+<hr><div align="center"><u>#My first alx c project: 0x00-hello_world</u></div>
 
    TASK (0) preprocessor :- writes a script that runs a c file through the preprocessor and save the result in another file.
 
