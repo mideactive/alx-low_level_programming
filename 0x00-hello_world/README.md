@@ -16,11 +16,9 @@
       
  #### Solution:
 
-** save the main.c file (an already created file) to the $CFILE using the linux export command
-
-** create 0-preprocessor file using the touch linux touch command
-
-** opend 0-preprocessor file with a vim text editor
+**save the main.c file (an already created file) to the $CFILE using the linux export command
+**create 0-preprocessor file using the touch linux touch command
+**opend 0-preprocessor file with a vim text editor
 
 ** addedshebang at the first line of my script
 
