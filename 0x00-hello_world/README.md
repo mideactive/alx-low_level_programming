@@ -2,7 +2,7 @@
 
 ### OS: linux:- ubuntu 20.4
 
-# `#0969DA`My first alx c project: 0x00-hello_world
+# `#0969DA` My first alx c project: 0x00-hello_world
 
    ### TASK (0) preprocessor :- writes a script that runs a c file through the preprocessor and save the result in another file.
 
