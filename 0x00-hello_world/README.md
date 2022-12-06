@@ -73,7 +73,7 @@
     
     
     
-   ### TASK (3) Name:- Write a script that compiles a C file and creates an executable named cisfun.
+ ### [3-Name](https://github.com/mideactive/alx-low_level_programming/blob/master/0x00-hello_world/3-name):- Write a script that compiles a C file and creates an executable named cisfun.
     
             . The C file name will be saved in the variable $CFILE
     
@@ -90,7 +90,7 @@
   
     
     
-  ### TASK (4) Hello, puts:- Write a C program that prints exactly "Programming is like building a multilingual puzzle, followed by a new line.
+### [4-puts](https://github.com/mideactive/alx-low_level_programming/blob/master/0x00-hello_world/4-puts.c):- Write a C program that prints exactly "Programming is like building a multilingual puzzle, followed by a new line.
 
                . Use the function puts
    
@@ -123,7 +123,7 @@
     
     
     
-  ### TASK (5):- Write a C program that prints exactly with proper grammar, but the outcome is a piece of art,, followed by a new line.
+### [5-printf](https://github.com/mideactive/alx-low_level_programming/blob/master/0x00-hello_world/5-printf.c):- Write a C program that prints exactly with proper grammar, but the outcome is a piece of art,, followed by a new line.
        
                . Use the function printf
                . You are not allowed to use the function puts
@@ -138,11 +138,11 @@
    
 **. We end our program with a return value which is 0.**
    
-    **. Save the code and compile using gcc with necessary flags.**
-    **. problem solved..**
+**. Save the code and compile using gcc with necessary flags.**
+**. problem solved..**
     
     
- ### TASK (6):- Write a C program that prints the size of various types on the computer it is compiled and run on.
+ ### [6-size](https://github.com/mideactive/alx-low_level_programming/blob/master/0x00-hello_world/6-size.c):- Write a C program that prints the size of various types on the computer it is compiled and run on.
     
             . You should produce the exact same output as in the example.
             . Warnings are allowed
@@ -170,7 +170,7 @@
 **. problem solved.**
     
     
-### TASK (7) Intel:- Write a script that generates the assembly code (Intel syntax) of a C code and save it in an output file.
+### [100-Intel](https://github.com/mideactive/alx-low_level_programming/blob/master/0x00-hello_world/100-intel):- Write a script that generates the assembly code (Intel syntax) of a C code and save it in an output file.
    
               . The C file name will be saved in the variable $CFILE.
               . The output file should be named the same as the C file, but with the extension .s instead of .c.
@@ -193,7 +193,7 @@
 **. Problem solved ...**
     
     
- ### TASK (8) :- Write a C program that prints exactly and that piece of art is useful" - Dora Korpar, 2015-10-19, followed by a new line, to the                       standard error.
+ ### [101-quote](https://github.com/mideactive/alx-low_level_programming/blob/master/0x00-hello_world/101-quote.c) :- Write a C program that prints exactly and that piece of art is useful" - Dora Korpar, 2015-10-19, followed by a new line, to the                       standard error.
     
                . You are not allowed to use any functions listed in the NAME section of the man (3) printf or man (3) puts
                . Your program should return 1
