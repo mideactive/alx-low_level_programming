@@ -37,21 +37,21 @@
           
 ####          <time.h>: is required to use the time(0) function, to ensure that we have random intergers 
 
-######              int main(void) function takes an empty argument, and returns an int.
+######             . MAIN: function takes an empty argument, and returns an int.
 
-######              An int n variable is declared, to help store our values.
+######             . VARIABLE N: Stores the value to be outputed.
 
-######              srand(time(0)) ensure that we get diferent values each time we run our programm.
+######             . srand(time(0)): ensure that we get diferent values each time we run our programm.
 
-######              The rand() - RAND_MAX / 2 print random integers, and stores it inside out n variable.
+######             . The rand() - RAND_MAX / 2: prints random integers, and stores it inside out n variable.
 
-######              The IF conditional statement is used to check is n greater than 0, if true, it prints a positive value of n and a string
+######             . IF: used to check id N is greater than 0, if true, it prints a positive value of n and a string
 
-######              We have the ELSE If statment to extend our IF condition, it prints 0 if the value of n is equal to 0
+######             . ELSE If: for further conditions, it prints 0 if the value of n is equal to 0
 
-######              Finally, we use the ELSE statement which signifies the end of our condition, and print the value of n if it is nagative 
+######             . ELSE: signifies the end of our condition, and print the value of n if it is nagative 
           
-######              The RETURN function returns an int value i.e 0, since we require that our main function to return an int
+######             . RETURN: return an int as required.
 
 
 <hr/>
@@ -95,22 +95,22 @@
           
 ####          <time.h>: is required to use the time(0) function, to ensure that we have random intergers 
 
-#####             Our main function returns an int, and takes no argument.
+#####            . MAIN: function returns an int, and takes no argument.
 
-#####             An in varable n is declared
+#####            . VARIABLE N: take a int datatype, and stores the result of the output
 
-#####             srand(time(0)) ensure variable n returns different int values each time it's called
+#####            . srand(time(0)): ensure variable n returns different int values each time it's called
 
-#####             rand() - RAND_MAX / 2 creates our random integers and stores it intside the n variable
+#####            . rand() - RAND_MAX / 2: creates random integers and stores it intside the n variable
 
-#####             An IF conditional statement i.e n % 10 > 5, that extract the last value of int n, returns int n and the last value if it is greater than 5.
-#####             An ELSE IF conditional statement n % 10 == 0, that extract the last value of int n, returns int n and the value 0 if it is equal to 0
+#####            . IF: i.e n % 10 > 5, extract the last value of int n, returns int n and the last value if it is greater than 5.
 
-#####             Finally, a ELSE statement that signifies the end of the IF statement, returns int n, the last value of n, and the string and is less than 6 and not 0
-#####             Our function returns and int i.e 0 a signified as the return value for our MAIN function.             
+#####            . ELSE IF: n % 10 == 0, extract the last value of int n, returns int n and the value 0 if it is equal to 0
 
+#####            . ELSE: signifies the end of an IF, returns int n, the last value of n, and the string and is less than 6 and not 0
 
-    
+#####            . RETURN: returns an int as required.             
+
  <hr>
     
     
@@ -120,25 +120,27 @@
 
 ##### Write a program that prints the alphabet in lowercase, followed by a new line.
 
-           . You can only use the putchar function (every other function (printf, puts, etc…) is forbidden)
+                . You can only use the putchar function (every other function (printf, puts, etc…) is forbidden)
            
-           . All your code should be in the main function
+                . All your code should be in the main function
            
-           . You can only use putchar twice in our code
+                . You can only use putchar twice in our code
            
 ##### Solution:
 
-###### Task 2 require that we use a loop statement. in this case, i used a 'for' loop, which keeps running as long as the condition is true.
+###### Task 2 require that we use a loop statement. in this case, i used a FOR loop, which keeps running as long as the condition is true.
 
-          . Create a variable that accepts a char datatype named 'x'
-          
-          . Use a for x equals the askey 'a'; x <= askey 'z'; z++, ensure our variable starts looping from 'a' and ends at 'z'
-          
-          . All this are done inside the main function.
-          
-          . We are asked to use only putchar, which takes only one argument i.e putchar(x)
-          
-          .The we have our code print 'a' to 'z' int lower case alphabet.
+#### <stdio.h>: is required for the putchar function. The putchar function takes a single character argument
+
+#####           . MAIN: function will return an integer, and doesn't take any argument.
+
+#####           . VARIABLE LOW: stores a char datatype.
+
+#####           . FOR: a loop statement is that is used to loop through askeys 'a' to 'x'
+
+#####           . PUTCHAR: the function prints the output of the 'low' variable, and also prints a newline
+
+#####           . RETURN: returns an int as required i.e 0
           
 <hr>
 
@@ -148,23 +150,26 @@
 
 ##### Write a program that prints the alphabet in lowercase, and then in uppercase, followed by a new line.
 
-           . You can only use the putchar function (every other function (printf, puts, etc…) is forbidden)
-           . All your code should be in the main function
-           . You can only use putchar three times in your code
+               . You can only use the putchar function (every other function (printf, puts, etc…) is forbidden)
+               
+               . All your code should be in the main function
+               
+               . You can only use putchar three times in your code
            
 ##### Solution:
 
 ###### Just like tast two, we will use a 'for' statement to loop through characters, but we have to do it twice this time around.
 
-          . First we loop through the lower case alphabet of 'a' to 'z'
-          
-          . Secondly, we also loop through the upper case of alphabet 'A' to 'Z'
-          
-          . We are only allowed to use putchar for our output, putchar takes a single char argument i.e putchar(value)
-          
-          . The we print the result of our variable twice using putchar.
-          
-          . The last putchar prints the newline
+#### <stdio.h>: is required for the putchar function. The putchar function takes a single character argument
+
+#####         . MAIN: returns an int and takes no argument
+
+#####         . VARIABLE LOW: stores the lower and upper case values to be printed.
+
+#####         . FOR: is a loop statement used twice, to loop through 'a' to 'z' and 'A' to 'Z'. Each FOR loop is followed by a putchar(low) so that, so that the alphabets can be printed next to eachother.
+#####         . PUTCHAR: is a function used to print the output of variable 'low', and a newline.
+
+#####         . RETURN: returns 0 as required
           
 <hr>
  
@@ -174,29 +179,32 @@
 
 ###### Write a program that prints the alphabet in lowercase, followed by a new line.
 
-          . Print all the letters except q and e
+            . Print all the letters except q and e
           
-          . You can only use the putchar function (every other function (printf, puts, etc…) is forbidden)
+            . You can only use the putchar function (every other function (printf, puts, etc…) is forbidden)
           
-          . All your code should be in the main function
+            . All your code should be in the main function
           
-          . You can only use putchar twice in your code
+            . You can only use putchar twice in your code
           
 ##### Solution:
 
 ###### Similar to tast 4, we will use a 'for' loop to loop through our alphabets. But we are asked to exempt 'q' and 'e'
 
-         . Declare a char variable eg x
-         
-         . for x equal askey 'a'; x <= askey 'z'; x++
-         
-         . Use a conditional if statment, i.e if ((x not equal 'e') and (x not equal 'q'))
-         
-         . Print the values of variable x, using  putchar i.e putchar(x)
-         
-         . We will use another putchar to makes sure the output is followed by a newline.
-         
-         . All this is done inside the main function
+#### <stdio.h>: is required for the putchar function. The putchar function takes a single character argument
+
+#####       . MAIN: returns an int, and takes no argument.
+
+#####       . VARIABLE LOW: takes a char datatype, and is used to store the output of our alphabet
+
+#####       . FOR: loops through the askeys 'a' to 'z'
+
+#####       . IF ((x != 'q') & (x != 'e')): ensures that 'q' and 'x' are not part of the values variable 'low' will return
+
+#####       . PUTCHAR: functions prints the output of the 'low' variable, and also prints a newline 
+
+#####       . RETURN: returns int as required i.e 0 
+
 <hr>
          
 #### 5. Numbers
