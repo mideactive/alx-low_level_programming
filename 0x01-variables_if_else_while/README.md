@@ -3,6 +3,7 @@
 ### OS: Linux ubuntu 20.4
 
 #### 0. Positive anything is better than negative nothing
+
 ##### [0-positive_or_negative](https://github.com/mideactive/alx-low_level_programming/blob/master/0x01-variables_if_else_while/0-positive_or_negative.c):
 
 ##### This program will assign a random number to the variable n each time it is executed. Complete the source code in order to print whether the number          stored in the variable n is positive or negative.
@@ -35,7 +36,9 @@
           Else if 'n' is equal(==) 0, 'n' zero with a the string "is zero"
           
           Else 'n' return a nagative integer, 'n' should print variable 'n' with the string "is nagative"
-      
+<hr>
+
+
 #### 1. The last digit
 
 [1-last_digit.c](https://github.com/mideactive/alx-low_level_programming/blob/master/0x01-variables_if_else_while/1-last_digit.c):
@@ -74,7 +77,10 @@
             . If n % 10 == 0, print the int value of 'n' and a string "is 0"
             
             . Else , print the int value of 'n' and a string "is less than 6 and not 0"
-            
+    
+ <hr>
+    
+    
 ##### 2. I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game
 
 [2-print_alphabet.c](https://github.com/mideactive/alx-low_level_programming/blob/master/0x01-variables_if_else_while/2-print_alphabet.c)
@@ -101,4 +107,5 @@
           
           .The we have our code print 'a' to 'z' int lower case alphabet.
           
+<hr>
 
