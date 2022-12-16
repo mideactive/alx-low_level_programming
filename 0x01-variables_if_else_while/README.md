@@ -23,3 +23,15 @@
           . if the number is less than 0: is negative
 
           . followed by a new line
+
+##### Solution:
+######    It a simple case of using the conditional statements if, else if and else
+
+          The variable 'n' has been initlized rand() - RAND_MAX / 2 to generate random numbers
+          
+          If 'n' is greater(>) than 0, 'n' returns a positive integer value of variable 'n' with a string "is positive"
+          
+          Else if 'n' is equal(==) 0, 'n' zero with a the string "is zero"
+          
+          Else 'n' return a nagative integer, 'n' should print variable 'n' with the string "is nagative"
+          
