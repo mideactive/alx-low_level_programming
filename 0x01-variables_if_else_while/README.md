@@ -39,7 +39,7 @@
 
 ######             . MAIN: function takes an empty argument, and returns an int.
 
-######             . VARIABLE N: Stores the value to be outputed.
+######             . INT n: Stores the value to be outputed.
 
 ######             . srand(time(0)): ensure that we get diferent values each time we run our programm.
 
@@ -95,21 +95,21 @@
           
 ####          <time.h>: is required to use the time(0) function, to ensure that we have random intergers 
 
-#####            . MAIN: function returns an int, and takes no argument.
+######            . MAIN: function returns an int, and takes no argument.
 
-#####            . VARIABLE N: take a int datatype, and stores the result of the output
+######            . INT n: take a int datatype, and stores the result of the output
 
-#####            . srand(time(0)): ensure variable n returns different int values each time it's called
+######            . srand(time(0)): ensure variable n returns different int values each time it's called
 
-#####            . rand() - RAND_MAX / 2: creates random integers and stores it intside the n variable
+######            . rand() - RAND_MAX / 2: creates random integers and stores it intside the n variable
 
-#####            . IF: i.e n % 10 > 5, extract the last value of int n, returns int n and the last value if it is greater than 5.
+######            . IF: i.e n % 10 > 5, extract the last value of int n, returns int n and the last value if it is greater than 5.
 
-#####            . ELSE IF: n % 10 == 0, extract the last value of int n, returns int n and the value 0 if it is equal to 0
+######            . ELSE IF: n % 10 == 0, extract the last value of int n, returns int n and the value 0 if it is equal to 0
 
-#####            . ELSE: signifies the end of an IF, returns int n, the last value of n, and the string and is less than 6 and not 0
+######            . ELSE: signifies the end of an IF, returns int n, the last value of n, and the string and is less than 6 and not 0
 
-#####            . RETURN: returns an int as required.             
+######            . RETURN: returns an int as required.             
 
  <hr>
     
@@ -132,15 +132,15 @@
 
 #### <stdio.h>: is required for the putchar function. The putchar function takes a single character argument
 
-#####           . MAIN: function will return an integer, and doesn't take any argument.
+######           . MAIN: function will return an integer, and doesn't take any argument.
 
-#####           . VARIABLE LOW: stores a char datatype.
+######           . INT low: stores a char datatype.
 
-#####           . FOR: a loop statement is that is used to loop through askeys 'a' to 'x'
+######           . FOR: a loop statement is that is used to loop through askeys 'a' to 'x'
 
-#####           . PUTCHAR: the function prints the output of the 'low' variable, and also prints a newline
+######           . PUTCHAR: the function prints the output of the 'low' variable, and also prints a newline
 
-#####           . RETURN: returns an int as required i.e 0
+######           . RETURN: returns an int as required i.e 0
           
 <hr>
 
@@ -162,14 +162,14 @@
 
 #### <stdio.h>: is required for the putchar function. The putchar function takes a single character argument
 
-#####         . MAIN: returns an int and takes no argument
+######         . MAIN: returns an int and takes no argument
 
-#####         . VARIABLE LOW: stores the lower and upper case values to be printed.
+######         . INT low: stores the lower and upper case values to be printed.
 
-#####         . FOR: is a loop statement used twice, to loop through 'a' to 'z' and 'A' to 'Z'. Each FOR loop is followed by a putchar(low) so that, so that the alphabets can be printed next to eachother.
-#####         . PUTCHAR: is a function used to print the output of variable 'low', and a newline.
+######         . FOR: is a loop statement used twice, to loop through 'a' to 'z' and 'A' to 'Z'. Each FOR loop is followed by a putchar(low) so that, so that the alphabets can be printed next to eachother.
+######         . PUTCHAR: is a function used to print the output of variable 'low', and a newline.
 
-#####         . RETURN: returns 0 as required
+######         . RETURN: returns 0 as required
           
 <hr>
  
@@ -193,17 +193,17 @@
 
 #### <stdio.h>: is required for the putchar function. The putchar function takes a single character argument
 
-#####       . MAIN: returns an int, and takes no argument.
+######       . MAIN: returns an int, and takes no argument.
 
-#####       . VARIABLE LOW: takes a char datatype, and is used to store the output of our alphabet
+######       . INT low: takes a char datatype, and is used to store the output of our alphabet
 
-#####       . FOR: loops through the askeys 'a' to 'z'
+######       . FOR: loops through the askeys 'a' to 'z'
 
-#####       . IF ((x != 'q') & (x != 'e')): ensures that 'q' and 'x' are not part of the values variable 'low' will return
+######       . IF ((x != 'q') & (x != 'e')): ensures that 'q' and 'x' are not part of the values variable 'low' will return
 
-#####       . PUTCHAR: functions prints the output of the 'low' variable, and also prints a newline 
+######       . PUTCHAR: functions prints the output of the 'low' variable, and also prints a newline 
 
-#####       . RETURN: returns int as required i.e 0 
+######       . RETURN: returns int as required i.e 0 
 
 <hr>
          
@@ -219,11 +219,17 @@
 
 ###### Just like the previous tasks, we will also use the 'for loop' statment. But we will looping int values from 0 to 9
 
-         . Declare an integer variable inside the main function, eg x.
-         
-         . for x equals 0; x < 10; x++
-         
-         . We now use our printf function, with a %d specifier that prints an int, to print out our value
+#### <stdio.h>: is required for the putchar function. The putchar function takes a single character argument
+
+###### . MAIN: returns an int, and takes no arguments
+
+###### . INT i: stores the value to be printed
+
+###### . FOR: loops through 0 to 10, and return ten digits from 0 to 9
+
+###### . PRINTF: prints the output of variable i, with an int specifier, and also prints a newline.
+
+###### . RETURN: returns an int as specified
          
 <hr>
 
