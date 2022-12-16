@@ -4,7 +4,7 @@
 #### 0. Positive anything is better than negative nothing
 ##### [0-positive_or_negative](https://github.com/mideactive/alx-low_level_programming/blob/master/0x01-variables_if_else_while/0-positive_or_negative.c):
 
-###### This program will assign a random number to the variable n each time it is executed. Complete the source code in order to print whether the number          stored in the variable n is positive or negative.
+##### This program will assign a random number to the variable n each time it is executed. Complete the source code in order to print whether the number          stored in the variable n is positive or negative.
 
  [source code](https://github.com/holbertonschool/0x01.c/blob/master/0-positive_or_negative_c) 
 
@@ -74,3 +74,17 @@
             
             . Else , print the int value of 'n' and a string "is less than 6 and not 0"
             
+##### 2. I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game
+
+[2-print_alphabet.c](https://github.com/mideactive/alx-low_level_programming/blob/master/0x01-variables_if_else_while/2-print_alphabet.c)
+
+##### Write a program that prints the alphabet in lowercase, followed by a new line.
+
+           . You can only use the putchar function (every other function (printf, puts, etc…) is forbidden)
+           
+           . All your code should be in the main function
+           
+           . You can only use putchar twice in your code
+           
+###### Solution:
+
