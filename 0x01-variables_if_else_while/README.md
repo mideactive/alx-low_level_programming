@@ -91,7 +91,7 @@
            
            . All your code should be in the main function
            
-           . You can only use putchar twice in your code
+           . You can only use putchar twice in our code
            
 ##### Solution:
 
@@ -109,3 +109,30 @@
           
 <hr>
 
+#### 3. alphABET
+
+[3-print_alphabets.c](https://github.com/mideactive/alx-low_level_programming/blob/master/0x01-variables_if_else_while/3-print_alphabets.c)
+
+##### Write a program that prints the alphabet in lowercase, and then in uppercase, followed by a new line.
+
+           . You can only use the putchar function (every other function (printf, puts, etc…) is forbidden)
+           . All your code should be in the main function
+           . You can only use putchar three times in your code
+           
+##### Solution:
+
+###### Just like tast two, we will use a 'for' statement to loop through characters, but we have to do it twice this time around.
+
+          . First we loop through the lower case alphabet of 'a' to 'z'
+          
+          . Secondly, we also loop through the upper case of alphabet 'A' to 'Z'
+          
+          . We are only allowed to use putchar for our output, putchar takes a single char argument i.e putchar(value)
+          
+          . The we print the result of our variable twice using putchar.
+          
+          . The last putchar prints the newline
+          
+<hr>
+ 
+#### 4. When I was having that alphabet soup, I never thought that it would pay off
