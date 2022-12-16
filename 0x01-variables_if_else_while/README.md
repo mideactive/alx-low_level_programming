@@ -161,7 +161,7 @@
          
          . Print the values of variable x, using  putchar i.e putchar(x)
          
-         . We will use another putchar to makes sure a output is followed by a newline.
+         . We will use another putchar to makes sure the output is followed by a newline.
          
          . All this is done inside the main function
 <hr>
@@ -175,3 +175,16 @@
           . All your code should be in the main function
           
 ##### Solution:
+
+###### Just like the previous tasks, we will also use the 'for loop' statment. But we will looping int values from 0 to 9
+
+         . Declare an integer variable inside the mainunction, eg x.
+         
+         . for x equals 0; x < 10; x++
+         
+         . We now use our printf function, with a %d specifier that prints an int, to print out our value
+         
+<hr>
+
+
+         
