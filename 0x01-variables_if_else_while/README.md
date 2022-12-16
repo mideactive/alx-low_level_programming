@@ -26,17 +26,32 @@
 
           . followed by a new line
 
-##### Solution:
-######    It a simple case of using the conditional statements if, else if and else
+#### Solution:
+#####    It a simple case of using the conditional statements if, else if and else
 
-          The variable 'n' has been initlized rand() - RAND_MAX / 2 to generate random numbers
+####          Included standard libraries;
           
-          If 'n' is greater(>) than 0, 'n' returns a positive integer value of variable 'n' with a string "is positive"
+####          <stdio.h>: is required for our printf function, that takes a int specifier inside a string, and our int variable as arguments
           
-          Else if 'n' is equal(==) 0, 'n' zero with a the string "is zero"
+####          <stdlib.h>: is required for srand, rand and RAND_MAX
           
-          Else 'n' return a nagative integer, 'n' should print variable 'n' with the string "is nagative"
-<hr>
+####          <time.h>: is required to use the time(0) function, to ensure that we have random intergers 
+
+####          int main(void) function takes an empty argument, and returns an int.
+
+####          An int n variable is declared, to help store our values.
+
+####          srand(time(0)) ensure that we get diferent values each time we run our programm.
+
+####          The rand() - RAND_MAX / 2 print random integers, and stores it inside out n variable.
+
+####          The IF conditional statement is used to check is n greater than 0, if true, it prints a positive value of n and a string
+
+####          We have the ELSE If statment to extend our IF condition, it prints 0 if the value of n is equal to 0
+
+####          Finally, we use the ELSE statement which signifies the end of our condition, and print the value of n if it is nagative 
+          
+####          The RETURN function returns an int value i.e 0, since we require that our main function to return an int
 
 
 #### 1. The last digit
@@ -178,7 +193,7 @@
 
 ###### Just like the previous tasks, we will also use the 'for loop' statment. But we will looping int values from 0 to 9
 
-         . Declare an integer variable inside the mainunction, eg x.
+         . Declare an integer variable inside the main function, eg x.
          
          . for x equals 0; x < 10; x++
          
@@ -186,5 +201,32 @@
          
 <hr>
 
+#### 6. Numberz
 
-         
+[6-print_numberz.c](https://github.com/mideactive/alx-low_level_programming/blob/master/0x01-variables_if_else_while/6-print_numberz.c)
+
+##### Write a program that prints all single digit numbers of base 10 starting from 0, followed by a new line.
+
+        . You are not allowed to use any variable of type char
+        
+        . You can only use the putchar function (every other function (printf, puts, etc…) is forbidden)
+        
+        . You can only use putchar twice in your code
+        
+        . All your code should be in the main function
+        
+##### Solution:
+
+###### We are asked to print integer value 0 to 9 using the putchar function, without using a char datatype. A putchar function is designed to accept   a single argument, which much be of a characters datatype.
+
+       . We'll create our an int variable inside the main function, i.e i.
+       
+       . We use a for statement to loop through our int variable from 0 to 9
+       
+       . The value inside a int i variable must be wraped in a single column i.e i = '0'
+       
+       . Our last value that we dont want variable i to exceed, must also be wraped in a single column i.e i <= '9'
+       
+       . We can now use putchar to print out our output i.e putchar(i)
+       
+       . We 'll use another putchar to 
