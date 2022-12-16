@@ -29,29 +29,29 @@
 #### Solution:
 #####    It a simple case of using the conditional statements if, else if and else
 
-######          Included standard libraries;
+###          Included standard libraries;
           
-######          <stdio.h>: is required for our printf function, that takes a int specifier inside a string, and our int variable as arguments
+####          <stdio.h>: is required for our printf function, that takes a int specifier inside a string, and our int variable as arguments
           
-######          <stdlib.h>: is required for srand, rand and RAND_MAX
+####          <stdlib.h>: is required for srand, rand and RAND_MAX
           
-######          <time.h>: is required to use the time(0) function, to ensure that we have random intergers 
+####          <time.h>: is required to use the time(0) function, to ensure that we have random intergers 
 
-######          int main(void) function takes an empty argument, and returns an int.
+######              int main(void) function takes an empty argument, and returns an int.
 
-######          An int n variable is declared, to help store our values.
+######              An int n variable is declared, to help store our values.
 
-######          srand(time(0)) ensure that we get diferent values each time we run our programm.
+######              srand(time(0)) ensure that we get diferent values each time we run our programm.
 
-######          The rand() - RAND_MAX / 2 print random integers, and stores it inside out n variable.
+######              The rand() - RAND_MAX / 2 print random integers, and stores it inside out n variable.
 
-######          The IF conditional statement is used to check is n greater than 0, if true, it prints a positive value of n and a string
+######              The IF conditional statement is used to check is n greater than 0, if true, it prints a positive value of n and a string
 
-######          We have the ELSE If statment to extend our IF condition, it prints 0 if the value of n is equal to 0
+######              We have the ELSE If statment to extend our IF condition, it prints 0 if the value of n is equal to 0
 
-######          Finally, we use the ELSE statement which signifies the end of our condition, and print the value of n if it is nagative 
+######              Finally, we use the ELSE statement which signifies the end of our condition, and print the value of n if it is nagative 
           
-######          The RETURN function returns an int value i.e 0, since we require that our main function to return an int
+######              The RETURN function returns an int value i.e 0, since we require that our main function to return an int
 
 
 <hr/>
@@ -87,13 +87,29 @@
 
 ###### Just like task 0, it's simple a case of if, else if and else
 
-            . We can extract the last digit of variable 'n' with n % 10
-            
-            . If n % 10 > 5 , print the int value of 'n' and a string "is than greater 5"
-            
-            . If n % 10 == 0, print the int value of 'n' and a string "is 0"
-            
-            . Else , print the int value of 'n' and a string "is less than 6 and not 0"
+###          Included standard libraries;
+          
+####          <stdio.h>: is required for our printf function, that takes a int specifier inside a string, and an int variable as arguments
+          
+####          <stdlib.h>: is required for srand, rand and RAND_MAX
+          
+####          <time.h>: is required to use the time(0) function, to ensure that we have random intergers 
+
+#####             Our main function returns an int, and takes no argument.
+
+#####             An in varable n is declared
+
+#####             srand(time(0)) ensure variable n returns different int values each time it's called
+
+#####             rand() - RAND_MAX / 2 creates our random integers and stores it intside the n variable
+
+#####             An IF conditional statement i.e n % 10 > 5, that extract the last value of int n, returns int n and the last value if it is greater than 5.
+#####             An ELSE IF conditional statement n % 10 == 0, that extract the last value of int n, returns int n and the value 0 if it is equal to 0
+
+#####             Finally, a ELSE statement that signifies the end of the IF statement, returns int n, the last value of n, and the string and is less than 6 and not 0
+#####             Our function returns and int i.e 0 a signified as the return value for our MAIN function.             
+
+
     
  <hr>
     
