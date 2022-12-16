@@ -1,4 +1,5 @@
-## <div align="center">if,else and while loop Project</div>
+## <hr> <div align="center">if,else and while loop Project</div>
+
 ### OS: Linux ubuntu 20.4
 
 #### 0. Positive anything is better than negative nothing
@@ -86,5 +87,18 @@
            
            . You can only use putchar twice in your code
            
-###### Solution:
+##### Solution:
+
+###### Task 2 require that we use a loop statement. in this case, i used a 'for' loop, which keeps running as long as the condition is true.
+
+          . Create a variable that accepts a char datatype named 'x'
+          
+          . Use a for x equals the askey 'a'; x <= askey 'z'; z++, ensure our variable starts looping from 'a' and ends at 'z'
+          
+          . All this are done inside the main function.
+          
+          . We are asked to use only putchar, which takes only one argument i.e putchar(x)
+          
+          .The we have our code print 'a' to 'z' int lower case alphabet.
+          
 
