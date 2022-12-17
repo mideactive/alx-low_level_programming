@@ -219,7 +219,7 @@
 
 ###### Just like the previous tasks, we will also use the 'for loop' statment. But we will looping int values from 0 to 9
 
-#### <stdio.h>: is required for the putchar function. The putchar function takes a single character argument
+#### <stdio.h>: is required for the printf function.
 
 ###### . MAIN: returns an int, and takes no arguments
 
@@ -251,14 +251,14 @@
 
 ###### We are asked to print integer value 0 to 9 using the putchar function, without using a char datatype. A putchar function is designed to accept   a single argument, which much be of a characters datatype.
 
-       . We'll create our an int variable inside the main function, i.e i.
-       
-       . We use a for statement to loop through our int variable from 0 to 9
-       
-       . The value inside a int i variable must be wraped in a single column i.e i = '0'
-       
-       . Our last value that we dont want variable i to exceed, must also be wraped in a single column i.e i <= '9'
-       
-       . We can now use putchar to print out our output i.e putchar(i)
-       
-       . We 'll use another putchar to 
+#### <stdio.h>: is required for the putchar function. The putchar function takes a single character argument
+
+###### . MAIN: returns an int, doesn't take any argument
+ 
+###### . INT D: stores the value to be printed
+
+###### . FOR: loops through the '0' to '9' digits, wraped in a single column so that it can be printed using the PUTCHAR function.
+
+###### . PUTCHAR: prints the result of int d, and also a newline.
+
+###### . RETURN: returns an int as required
