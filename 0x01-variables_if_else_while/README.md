@@ -357,3 +357,51 @@
 
 <hr>
 
+#### 10. Inventing is a combination of brains and materials. The more brains you use, the less material you need
+
+[100-print_comb3.c](https://github.com/mideactive/alx-low_level_programming/blob/master/0x01-variables_if_else_while/100-print_comb3.c)
+
+#### Write a program that prints all possible different combinations of two digits.
+
+          . Numbers must be separated by ,, followed by a space
+            
+          . The two digits must be different
+            
+          . 01 and 10 are considered the same combination of the two digits 0 and 1
+            
+          . Print only the smallest combination of two digits
+            
+          . Numbers should be printed in ascending order, with two digits
+            
+          . You can only use the putchar function (every other function (printf, puts, etc…) is forbidden)
+          
+          . You can only use putchar five times maximum in your code
+          
+          . You are not allowed to use any variable of type char
+          
+          . All your code should be in the main function
+          
+### Solution:
+
+##### <stdio.h>: library that is requires for PUTCHAR function
+
+###### . MAIN: returns an int, and takes no argument
+
+###### . INT d, p: both stores integer values to be used for our combination.
+
+###### . FOR: loops through int d that hold the char '0' to '9', and also through p + d that also hold char '0' to '9' to be combined
+
+###### . IF: the first if statment is used to ensure that p != d, to make sure each value is printed once
+
+###### . PUTCHAR: The first two PUTCHAT prints the value of p and d
+
+###### . IF: another if statment that if p == '8' && d == '9' space and comma will not be added
+
+###### . CONTINUE: Ensures that the loop runs to the end.
+
+###### . PUTCHAR: add the space, comma to our output and also a newline
+
+###### . RETURN: return an int as required
+
+<hr>
+
