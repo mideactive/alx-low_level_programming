@@ -405,3 +405,55 @@
 
 <hr>
 
+#### The success combination in business is: Do what you do better... and: do more of what you do...
+
+[101-print_comb4.c](https://github.com/mideactive/alx-low_level_programming/blob/master/0x01-variables_if_else_while/101-print_comb4.c)
+
+#### Write a program that prints all possible different combinations of three digits.
+
+          . Numbers must be separated by ,, followed by a space
+          
+          . The three digits must be different
+          
+          . 012, 120, 102, 021, 201, 210 are considered the same combination of the three digits 0, 1 and 2
+          
+          . Print only the smallest combination of three digits
+          
+          . Numbers should be printed in ascending order, with three digits
+          
+          . You can only use the putchar function (every other function (printf, puts, etc…) is forbidden)
+          
+          . You can only use putchar six times maximum in your code
+          
+          . You are not allowed to use any variable of type char
+          
+          . All your code should be in the main function
+          
+### Solutin:
+
+#### <stdio.h>: required to use the PUTCHAR function
+
+###### . MAIN: returns an int, and take no argument
+
+###### . INT d, p, q: declared to hold the char '0' to '9' 3 times.
+
+###### . FOR: loops through the int varaibel that stores a char '0' to '9'
+
+###### . FOR: variable p that stores the value of d + 1, and loops through char '0' to '9'
+
+###### . FOR: third variable q that stores value p + 1, and loops through char '0' to '9'
+
+###### . IF: first if that check if d != p && p != q , to avoid repititions of values
+
+###### . PUTCHAR: the first three PUTCHAR that prints the values of d, p and q
+
+###### . IF: The second if that ensure a comma or space in not included after the last value 789
+
+###### . CONTINUE: That ensures the program reaches the end
+
+###### . PUTCHAR: prints a space, comma, and a newline
+
+###### . RETURN: return int as required
+
+<hr>
+
