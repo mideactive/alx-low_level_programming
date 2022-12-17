@@ -322,3 +322,38 @@
 ###### . RETURN: return an int as required.
 
 <hr>
+
+#### 9. Patience, persistence and perspiration make an unbeatable combination for success
+
+[9-print_comb.c](https://github.com/mideactive/alx-low_level_programming/blob/master/0x01-variables_if_else_while/9-print_comb.c)
+
+#### Write a program that prints all possible combinations of single-digit numbers.
+
+           . Numbers must be separated by ,, followed by a space
+           
+           . Numbers should be printed in ascending order
+           
+           . You can only use the putchar function (every other function (printf, puts, etc…) is forbidden)
+           
+           . All your code should be in the main function
+           
+           . You can only use putchar four times maximum in your code
+           
+           . You are not allowed to use any variable of type char
+           
+### Solution:
+
+#### <stdio.h>: library required for the PUTCHAR function
+
+###### . MIAN: returns an int, and takes no argument
+
+###### . INT d: holds the value to be printed
+
+###### . FOR: loops through  char '0' to '9', and PUTCHAR prints the value of d
+
+###### . IF: the value of int d is not equal to '9', PUTCHAR adds a space and comma. and prints a newline
+
+###### . RETURN: returns int value a required
+
+<hr>
+
