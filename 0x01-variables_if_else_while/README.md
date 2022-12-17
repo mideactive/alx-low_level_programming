@@ -262,3 +262,32 @@
 ###### . PUTCHAR: prints the result of int d, and also a newline.
 
 ###### . RETURN: returns an int as required
+
+<hr>
+
+### 7. Smile in the mirror
+
+[7-print_tebahpla.c](https://github.com/mideactive/alx-low_level_programming/blob/master/0x01-variables_if_else_while/7-print_tebahpla.c)
+
+#### Write a program that prints the lowercase alphabet in reverse, followed by a new line.
+
+           . You can only use the putchar function (every other function (printf, puts, etc…) is forbidden)
+           
+           . All your code should be in the main function
+           
+           . You can only use putchar twice in your code
+
+### Solution:
+
+#### <stdio.h>: required to us the put char function
+
+###### . MAIN: returns an int, and takes no argument
+
+###### . CHAR d: strores the values to be printed
+
+###### . FOR: loops through 'z' to 'a', because we are to print in reverse.
+
+###### . PUTCHAR: outputs the value of the CHAR d in reverse, and also prints a newline.
+
+###### . RETURN: returns an int as required
+
