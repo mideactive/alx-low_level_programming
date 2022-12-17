@@ -457,3 +457,52 @@
 
 <hr>
 
+#### 12. Software is eating the World
+
+[102-print_comb5.c](https://github.com/mideactive/alx-low_level_programming/blob/master/0x01-variables_if_else_while/102-print_comb5.c)
+
+#### Write a program that prints all possible combinations of two two-digit numbers.
+
+           . The numbers should range from 0 to 99
+           
+           . The two numbers should be separated by a space
+           
+           . All numbers should be printed with two digits. 1 should be printed as 01
+           
+           . The combination of numbers must be separated by comma, followed by a space
+           
+           . The combinations of numbers should be printed in ascending order
+           
+           . 00 01 and 01 00 are considered as the same combination of the numbers 0 and 1
+           
+           . You can only use the putchar function (every other function (printf, puts, etc…) is forbidden)
+           
+           . You can only use putchar eight times maximum in your code
+           
+           . You are not allowed to use any variable of type char
+           
+           . All your code should be in the main function
+           
+### Solution:
+
+#### <stdio.h>: required to use the PUTCHAR function
+
+###### . MAIN: return a int value, and takes no argument
+
+###### . INT p, q: stores the values that will be outputed
+
+###### . FOR: equates p = '0' and loops through to '98', q quates q = p + 1, and loops through it to '99'
+
+###### . PUTCHAR: used four times to output the value of p and q , with another PUTCHAR at the center o both for spacing
+
+###### . The result of ((p / 10) + '0'), ((p % 10) + '0'), ((q / 10) + '0') and ((q % 10) + '0') enable putchar convert our int values to chars
+
+###### . IF: eusures comma and space is not adde to the end of the output
+
+###### . CONTINUE: For a program flow to reach the end
+
+###### . PUTCHAR: two PUTCHAR functions prints space, comma at the end and the last PUTCHAR prints a newline
+
+###### . RETURN: returns int as required
+
+
