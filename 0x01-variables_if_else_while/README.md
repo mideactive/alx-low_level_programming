@@ -291,3 +291,34 @@
 
 ###### . RETURN: returns an int as required
 
+<hr>
+
+### 8. Hexadecimal
+
+[8-print_base16.c](https://github.com/mideactive/alx-low_level_programming/blob/master/0x01-variables_if_else_while/8-print_base16.c)
+
+#### Write a program that prints all the numbers of base 16 in lowercase, followed by a new line.
+
+         . You can only use the putchar function (every other function (printf, puts, etc…) is forbidden)
+         
+         . All your code should be in the main function
+         
+         . You can only use putchar three times in your code
+         
+### Solution:
+
+#### <stdio.h>: standard library required to use the PUTCHAR function
+
+###### .MAIN: returns an int, and takes no argument
+
+###### . INT d: stores values for int
+
+###### . CHAR low: stores values for character
+
+###### . FOR: used twice to loop through values for int variable d '0' to '9' and char variable low 'a' to 'f'.
+
+###### . PUTCHAR: used to print the value of int d, char low, and a newline
+
+###### . RETURN: return an int as required.
+
+<hr>
