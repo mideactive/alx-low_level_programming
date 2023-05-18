@@ -50,4 +50,4 @@ Don’t forget to push your header file
 
 ### Solution:
 
-[2-print_alphabet_x10.c](https://github.com/mideactive/alx-low_level_programming/blob/master/0x02-functions_nested_loops/2-print_alphabet_x10.c) : i have my main.h function where i'll add my prototype already, i also have my '_putchar' function which i'm use to pint out my result. The task now is to loop through the lower alphabets 10x in 'void print_alphabet_x10(void)', call the function from the main function to display the result.
+[2-print_alphabet_x10.c](https://github.com/mideactive/alx-low_level_programming/blob/master/0x02-functions_nested_loops/2-print_alphabet_x10.c) : i have my 'main.h' function where i'll add my prototype already, i also have my '_putchar' function which i'm use to pint out my result. The task now is to loop through the lower alphabets 10x in 'void print_alphabet_x10(void)', call the function from the main function to display the result.
