@@ -51,3 +51,109 @@ Don’t forget to push your header file
 ### Solution:
 
 [2-print_alphabet_x10.c](https://github.com/mideactive/alx-low_level_programming/blob/master/0x02-functions_nested_loops/2-print_alphabet_x10.c) : i have my 'main.h' function where i'll add my prototype already, i also have my '_putchar' function which i'm use to pint out my result. The task now is to loop through the lower alphabets 10x in 'void print_alphabet_x10(void)', call the function from the main function to display the result.
+
+
+#### 3. islower
+
+	Write a function that checks for lowercase character.
+
+		Prototype: int _islower(int c);
+		Returns 1 if c is lowercase
+		Returns 0 otherwise
+	FYI: The standard library provides a similar function: islower. Run man islower to learn more.
+
+### Solution:
+
+[]() : here, we're also using add our new prototype 'int _islower(int c)' to the 'main.h' header file, where we already have the needed header files, and our '_putchar' prototype. I ceated a 'char' variable inside the 'int _islower(int c)' function, i loop through the lower case alphabet [a..z]. I did a text to check if the 'int' a parameter in == to the 'char' parameter. if true, 'return 1', else 'retun 0'. Then our function is called and texted in inside the main function.
+
+
+
+#### 4. isalpha
+
+	Write a function that checks for alphabetic character.
+
+		Prototype: int _isalpha(int c);
+		Returns 1 if c is a letter, lowercase or uppercase
+		Returns 0 otherwise
+	FYI: The standard library provides a similar function: isalpha. Run man isalpha to learn more.
+
+### Solution:
+
+[]() : I added the 'int _isalpha(int c)' prototype to the 'main.h' header file. Then run through lower and upper alphabet [a..z][A..Z] by creating two variables for each, and the check if the variables is '==' to the int parameter inside the '_isalpha' function, when it's called inside the main function, it returns 1 if it's either lower, or upper alphabet. and return 0 if it's neither.
+
+
+#### 5. Sign
+
+	Write a function that prints the sign of a number.
+
+		Prototype: int print_sign(int n);
+		Returns 1 and prints + if n is greater than zero
+		Returns 0 and prints 0 if n is zero
+		Returns -1 and prints - if n is less than zero
+
+### Solution:
+
+[]() : I added the 'int print_sign(int n)' pototype to the 'main.h' header file as usual. i did  a conditional if, else if, else chech on 'int n' to enable the function return the appropiate result. i used the '_putchar' function to print the signs, and then called the 'int print_sign(int n)' function inside the main function to print out the results.
+
+
+
+#### 6. There is no such thing as absolute value in this world. You can only estimate what a thing is worth to you
+
+	Write a function that computes the absolute value of an integer.
+
+		Prototype: int _abs(int);
+	FYI: The standard library provides a similar function: abs. Run man abs to learn more.
+
+[]() : this task replicates the 'abs' function. I added my 'int _abs(int)' prototype to the header file, i did a check inside the 'int _abs(int r)' to check if value is '>=' 0, if yes, return value 'r', else multiple value 'r' * '-1', which ensure our function always return a positive value even when a nagative value is passed to it. Then i called it in the main function to print out the results.
+
+
+
+#### 7. There are only 3 colors, 10 digits, and 7 notes; it's what we do with them that's important
+
+	Write a function that prints the last digit of a number.
+
+		Prototype: int print_last_digit(int);
+		Returns the value of the last digit
+
+### Solution:
+
+[]() : This task is simple uses the '% 10' inside the 'int print_last_digit(int)' function, to get the last digit of our negative, zero and positive numbers. I used the conditional 'if else statement to archive this task. If this function is used inside the main function, it will print out the last digit of numbers supplied to it.
+
+
+#### 8. I'm federal agent Jack Bauer, and today is the longest day of my life
+
+	Write a function that prints every minute of the day of Jack Bauer, starting from 00:00 to 23:59.
+
+		Prototype: void jack_bauer(void);
+		You can listen to this soundtrack while coding :)
+
+### Solution:
+
+[]() : For this task, i created two 'int' variables inside the 'void jack_bauer(void)' function. and did a nexeted loop through to attain the mins and hours. I then printed out my result using the '_putchar' function, and called the 'jack_bauer()' inside the 'main' function.
+
+
+#### 9. Learn your times table
+
+	Write a function that prints the 9 times table, starting with 0.
+
+		Prototype: void times_table(void);
+		Format: see example
+
+### Solution:
+
+[]() : for this task, i created three variables inside the 'void times_table(void)' function, and looped through, and multiply both variables, by each othe to attain the multiples of both variables, which i the stored in the third variable. I also used the conditional 'if and else' statements, and the '_putchar' to manipulate and get the right format to print out. And the called the 'void times_table(void)' function inside the 'main' function.
+
+
+#### 10. a + b
+
+	Write a function that adds two integers and returns the result.
+
+		Prototype: int add(int, int);
+
+### Solution:
+
+[]() : This task only add two variables, and it is called in the main function, then the addition of two integers passed to the function is printed out.
+
+
+  
+
