@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_last_digit - Check Holberton
+ * print_last_digit - Check alx
  * @r: An integer input
  * Description: This function prints the last digit of a number
  * Return: last digit of number r
@@ -14,6 +14,6 @@ int print_last_digit(int r)
 	else
 		n = r % 10;
 
-	_putchar((n % 10) + '0');
+	_putchar(n + '0');
 	return (n % 10);
 }
