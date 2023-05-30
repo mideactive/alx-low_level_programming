@@ -155,5 +155,44 @@ Don’t forget to push your header file
 [10-add.c](https://github.com/mideactive/alx-low_level_programming/blob/master/0x02-functions_nested_loops/10-add.c) : This task only add two variables, and it is called in the main function, then the addition of two integers passed to the function is printed out.
 
 
-  
+#### 11. 98 Battery Street, the OG
+
+	Write a function that prints all natural numbers from n to 98, followed by a new line.
+
+		Prototype: void print_to_98(int n);
+		Numbers must be separated by a comma, followed by a space
+		Numbers should be printed in order
+		The first printed number should be the number passed to your function
+		The last printed number should be 98
+		You are allowed to use the standard library
+
+### Solution:
+
+[11-print_to_98.c](https://github.com/mideactive/alx-low_level_programming/blob/master/0x02-functions_nested_loops/11-print_to_98.c) : For this task, we created a function that ensues that whatever value is supplied to the 'int n' must end with 98, be it a possitive value, nagative or even a greater number. Here, i used the 'for loop' statement in inside the conditional 'if else' statment to obtain my result. That is, 'if n <= 98' then it can loop from 0 to 98, 'else' loop 'n >= 98; n--' from a greater value down to '98'. Then, i used printf() to print out the result, and also obtain the indentations needed. The function function is called in the 'main' function, and prints out value supplied to it.
+
+
+#### 12. The World looks like a multiplication-table, or a mathematical equation, which, turn it how you will, balances itself
+
+	Write a function that prints the n times table, starting with 0.
+
+		Prototype: void print_times_table(int n);
+		If n is greater than 15 or less than 0 the function should not print anything
+	Format: see example
+
+### Solution:
+
+[100-times_table.c](https://github.com/mideactive/alx-low_level_programming/blob/master/0x02-functions_nested_loops/100-times_table.c) : This task is a bit complex, not because of printing out multiplication table of 'n' from 0 to 15. It's about the fact that it has to be printed out in a certain pertern. I've done similar task from above, but this is a bit more complex than previous. Firstly, i have to create 3 varibales inside the 'void print_times_table(int n)', two out of the variables we be used to loop through 'n'. While the last will be used to store the multiplication of both. Then, i check if 'n >= 0' && 'n >= 15'. if this condition is true, then i used a 'for loop' statement to loop through 'n' and store the value in the third variable. It's easier for me to extract multiplication with single values, or those '>=' 100 using the '_putchar()' function, also set the commas and spaces. check code for reference.
+
+
+#### 13. Nature made the natural numbers; All else is the work of women
+
+	If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Wri		te a program that computes and prints the sum of all the multiples of 3 or 5 below 1024 (excluded), followed by a new line.
+
+		You are allowed to use the standard library
+
+### Solution:
+
+[101-natural.c](https://github.com/mideactive/alx-low_level_programming/blob/master/0x02-functions_nested_loops/101-natural.c) : This task is about getting the multiples of 3 or 5 bellow 1034. I simply created three variables, the first one stores '1034', the second variable '= 0' that will store the sum of multiples of 3 or 5. I used the third variable to loop though '1034'. I then did a check using the if conditional statement i.e 'if third variable divided by 3 has no remender, '||' if third variable divided by 5' also has no remender. Then sum it up into the second varibale.
+
+
 
