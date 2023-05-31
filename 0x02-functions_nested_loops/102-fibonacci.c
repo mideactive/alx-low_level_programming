@@ -21,6 +21,5 @@ int main(void)
 		else
 			printf("%ld, ", fibonacci[i]);
 	}
-
 	return (0);
 }
