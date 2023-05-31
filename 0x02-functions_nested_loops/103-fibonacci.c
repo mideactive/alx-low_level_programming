@@ -19,6 +19,5 @@ int main(void)
 			sum += fibonacci[i];
 	}
 	printf("%ld\n", sum);
-
 	return (0);
 }
