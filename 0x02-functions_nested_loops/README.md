@@ -195,4 +195,13 @@ Don’t forget to push your header file
 [101-natural.c](https://github.com/mideactive/alx-low_level_programming/blob/master/0x02-functions_nested_loops/101-natural.c) : This task is about getting the multiples of 3 or 5 bellow 1034. I simply created three variables, the first one stores '1034', the second variable '= 0' that will store the sum of multiples of 3 or 5. I used the third variable to loop though '1034'. I then did a check using the if conditional statement i.e 'if third variable divided by 3 has no remender, '||' if third variable divided by 5' also has no remender. Then sum it up into the second varibale.
 
 
+#### 14. In computer class, the first assignment was to write a program to print the first 100 Fibonacci numbers. Instead, I wrote a program 		that would steal passwords of students. My teacher gave me an A
 
+	Write a program that prints the first 50 Fibonacci numbers, starting with 1 and 2, followed by a new line.
+
+		The numbers must be separated by comma, followed by a space , 
+		You are allowed to use the standard library
+
+### Solution:
+
+[102-fibonacci.c](https://github.com/mideactive/alx-low_level_programming/blob/master/0x02-functions_nested_loops/102-fibonacci.c) : In a fibonachi sequence, the addition of two initial value results to the next value in the sequence. We're ask to start our sequence from 1 & 2. Therefore, i created an array that holds 50 values. I assign my first value which is 0 to be 1, and the second which is 1 to be 2. i looped through the array, and added fibo[i - 1] + fibo[i -2],and stored it inside fibo[i]. i looped through to 50 again, and printed the result. and did a check if (i < 49) print a comma and space. 
