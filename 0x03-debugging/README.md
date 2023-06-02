@@ -97,4 +97,70 @@ int main(void)
 [1-main.c](https://github.com/mideactive/alx-low_level_programming/blob/master/0x03-debugging/1-main.c) :  All we have to do here is to comment out the 'while loop' statement, then the problem is fixed.
 
 
+### 2. 0 > 972?
 
+	This program prints the largest of three integers.
+
+2-main.c
+#include <stdio.h>
+#include "main.h"
+
+/**
+* main - prints the largest of 3 integers
+* Return: 0
+*/
+
+int main(void)
+{
+        int a, b, c;
+        int largest;
+
+        a = 972;
+        b = -98;
+        c = 0;
+
+        largest = largest_number(a, b, c);
+
+        printf("%d is the largest number\n", largest);
+
+        return (0);
+}
+
+2-largest_number.c
+#include "main.h"
+
+/**
+ * largest_number - returns the largest of 3 numbers
+ * @a: first integer
+ * @b: second integer
+ * @c: third integer
+ * Return: largest number
+ */
+
+int largest_number(int a, int b, int c)
+{
+    int largest;
+
+    if (a > b && b > c)
+    {
+        largest = a;
+    }
+    else if (b > a && a > c)
+    {
+        largest = b;
+    }
+    else
+    {
+        largest = c;
+    }
+
+    return (largest);
+}
+
+Fix the code in 2-largest_number.c so that it correctly prints out the largest of three numbers, no matter the case.
+
+Line count will not be checked for this task.
+
+### Solution:
+
+[2-largest_number.c](https://github.com/mideactive/alx-low_level_programming/blob/master/0x03-debugging/2-largest_number.c) : To fix this bug, the first 'if' statement is (a > b && a > c), the second is else if(b > a && b > c), and finally we make a check else if (c > a && c > b). This will give us the expected result.
