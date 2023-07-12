@@ -2,7 +2,6 @@
 void print_array(const int *array, size_t start, size_t end);
 int adv_bin_helper(int *array, size_t start, size_t end, int value);
 int advanced_binary(int *array, size_t size, int value);
-
 /**
  * advanced_binary - searches for a value in a sorted array of integers
  *  using the Binary search algorithm
