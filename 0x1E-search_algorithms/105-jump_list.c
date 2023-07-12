@@ -1,109 +1,42 @@
 #include "search_algos.h"
-void print_array(const int *array, size_t start, size_t end);
-int adv_bin_helper(int *array, size_t start, size_t end, int value);
-int advanced_binary(int *array, size_t size, int value);
 /**
- * jump_list - searches for a value in a sorted list of integers using the
- * Jump search algorithm
- *
- * @list: a pointer to the head of the list to search in
- * @size: number of nodes in list
+ * advanced_binary - searches for a value in a sorted array
+ * of integers using the Binary search algorithm - always the first one
+ * @array:  pointer to the first element of the array to search in
+ * @size: number of elements in array
  * @value: value to search for
- * Return: return a pointer to the first node where value is located OR NULL
- * if value is not present in head or if head is NULL
- */
-listint_t *jump_list(listint_t *list, size_t size, int value)
-{
-	size_t jump_size, i;
-	listint_t *curr = NULL, *prev = NULL;
-
-	if (list == NULL)
-		return (NULL);
-
-	/*find jump size*/
-	jump_size = sqrt(size);
-
-	curr = list;
-	prev = list;
-	i = 0;
-
-	while (curr != NULL && i < jump_size)
-	{
-		curr = curr->next;
-		i++;
-	}
-
-	/*find jump block containing target value*/
-	while (curr != NULL && curr->n < value)
-	{
-		printf("Value checked at index [%d] = [%d]\n",
-		       (int)curr->index, curr->n);
-		if (curr->n == value)
-		{
-			printf("Value found between indexes [%d] and [%d]\n",
-			       (int)(prev->index),
-			       (int)curr->index);
-			return (curr);
-		}
-		else if (curr->next == NULL)
-		{
-			printf("Value found between indexes [%d] and [%d]\n",
-			       (int)(prev->index),
-			       (int)curr->index);
-			return (jumplist_linear_search(list, prev->index,
-						       size, value));
-		}
-		prev = curr;
-		for (i = 0; curr->next != NULL && i < jump_size; i++)
-			curr = curr->next;
-	}
-
-	/*perform linear search in block*/
-	if (curr->index >= size || curr->n >= value)
-	{
-		printf("Value checked at index [%d] = [%d]\n",
-		       (int)curr->index, curr->n);
-		printf("Value found between indexes [%d] and [%d]\n",
-		       (int)(prev->index), (int)curr->index);
-		return (jumplist_linear_search(list, prev->index, size, value));
-	}
-	return (NULL);
-}
-
-/**
- * jumplist_linear_search - searches for a value in an array of integers using
- * the Linear search algoritm
+ * Return:  index where value is located otherwise -1
  *
- * @list: a pointer to the first element of the array to search in
- * @start: index of upper end of jump block + 1
- * @size: number of elements in array from breakpoint
- * @value: value to search for
- * Return:  first index where value is located or -1 if value is not present
- * in array or if array is NULL
- */
-
-
-listint_t *jumplist_linear_search(listint_t *list, size_t start,
-				  size_t size, int value)
+ **/
+int advanced_binary(int *array, size_t size, int value)
 {
-	size_t i;
-	listint_t *temp = NULL;
+	size_t i = 1, j, offset = 0;
+	int tmp;
 
-	if (list == NULL)
-		return (NULL);
-
-	temp = list;
-
-	for (i = 0; temp != NULL && temp->index < start; i++)
-		temp = temp->next;
-
-	for (i = temp->index; temp != NULL && i < size; i++)
+	if (array == NULL || size == 0)
+		return (-1);
+	printf("Searching in array: %d", array[0]);
+	while (i < size)
+		printf(", %d", array[i++]);
+	printf("\n");
+	if (size == 1 && array[0] != value)
+		return (-1);
+	j = (size - 1) / 2;
+	if (array[j] == value)
 	{
-		printf("Value checked at index [%d] = [%d]\n",
-		       (int)temp->index, temp->n);
-		if (temp->n == value)
-			return (temp);
-		temp = temp->next;
+		if (j == 0 || (array[j - 1] < value))
+			return (j);
 	}
-	return (NULL);
+	if (array[j] < value)
+	{
+		offset += j + 1;
+		array += j + 1;
+		if (size % 2 != 0)
+			j--;
+	}
+	j++;
+	tmp = advanced_binary(array, j, value);
+	if (tmp != -1)
+		return (tmp + offset);
+	return (-1);
 }
