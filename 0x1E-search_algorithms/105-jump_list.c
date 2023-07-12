@@ -1,42 +1,47 @@
 #include "search_algos.h"
 /**
- * advanced_binary - searches for a value in a sorted array
- * of integers using the Binary search algorithm - always the first one
- * @array:  pointer to the first element of the array to search in
- * @size: number of elements in array
+ * jump_list - searches for a value in a sorted list of
+ * integers using the Jump search algorithm
+ * @list: pointer to the first element of the list to search in
+ * @size: number of elements in the list
  * @value: value to search for
- * Return:  index where value is located otherwise -1
+ * Return:  first index where value is located otherwise -1
  *
- **/
-int advanced_binary(int *array, size_t size, int value)
+**/
+listint_t *jump_list(listint_t *list, size_t size, int value)
 {
-	size_t i = 1, j, offset = 0;
-	int tmp;
+	size_t leap, i = 0, j;
+	listint_t *head2, *head3;
 
-	if (array == NULL || size == 0)
-		return (-1);
-	printf("Searching in array: %d", array[0]);
-	while (i < size)
-		printf(", %d", array[i++]);
-	printf("\n");
-	if (size == 1 && array[0] != value)
-		return (-1);
-	j = (size - 1) / 2;
-	if (array[j] == value)
+	if (!list)
+		return (NULL);
+	leap = sqrt(size);
+	head2 = list;
+
+	while (i !=  size - 1)
 	{
-		if (j == 0 || (array[j - 1] < value))
-			return (j);
+		j = 0;
+		head3 = head2;
+		while (j < leap && head2->next)
+		{
+			head2 = head2->next;
+			j++;
+		}
+		i += j;
+		printf("Value checked at index [%lu] = [%d]\n", i, head2->n);
+		if (head2->n >= value)
+			break;
 	}
-	if (array[j] < value)
+	j = i - j;
+	printf("Value found between indexes [%lu] and [%lu]\n", j, i);
+	while (j <= i && j < size)
 	{
-		offset += j + 1;
-		array += j + 1;
-		if (size % 2 != 0)
-			j--;
+		printf("Value checked at index [%lu] = [%d]\n", j, head3->n);
+		if (head3->n == value)
+			return (head3);
+		head3 = head3->next;
+		j++;
 	}
-	j++;
-	tmp = advanced_binary(array, j, value);
-	if (tmp != -1)
-		return (tmp + offset);
-	return (-1);
+	return (NULL);
+
 }
