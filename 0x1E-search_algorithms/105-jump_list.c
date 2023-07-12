@@ -3,75 +3,107 @@ void print_array(const int *array, size_t start, size_t end);
 int adv_bin_helper(int *array, size_t start, size_t end, int value);
 int advanced_binary(int *array, size_t size, int value);
 /**
- * advanced_binary - searches for a value in a sorted array of integers
- *  using the Binary search algorithm
+ * jump_list - searches for a value in a sorted list of integers using the
+ * Jump search algorithm
  *
- * @array: a pointer to the first element of the array to search in
- * @size: number of elements in array
+ * @list: a pointer to the head of the list to search in
+ * @size: number of nodes in list
  * @value: value to search for
- * Return:  first index where value is located or -1 if value is not
- * present in array or if array is NULL
+ * Return: return a pointer to the first node where value is located OR NULL
+ * if value is not present in head or if head is NULL
  */
-int advanced_binary(int *array, size_t size, int value)
+listint_t *jump_list(listint_t *list, size_t size, int value)
 {
-	size_t start, end;
+	size_t jump_size, i;
+	listint_t *curr = NULL, *prev = NULL;
 
-	if (array == NULL)
-		return (-1);
+	if (list == NULL)
+		return (NULL);
 
-	start = 0;
-	end = size - 1;
-	return (adv_bin_helper(array, start, end, value));
+	/*find jump size*/
+	jump_size = sqrt(size);
+
+	curr = list;
+	prev = list;
+	i = 0;
+
+	while (curr != NULL && i < jump_size)
+	{
+		curr = curr->next;
+		i++;
+	}
+
+	/*find jump block containing target value*/
+	while (curr != NULL && curr->n < value)
+	{
+		printf("Value checked at index [%d] = [%d]\n",
+		       (int)curr->index, curr->n);
+		if (curr->n == value)
+		{
+			printf("Value found between indexes [%d] and [%d]\n",
+			       (int)(prev->index),
+			       (int)curr->index);
+			return (curr);
+		}
+		else if (curr->next == NULL)
+		{
+			printf("Value found between indexes [%d] and [%d]\n",
+			       (int)(prev->index),
+			       (int)curr->index);
+			return (jumplist_linear_search(list, prev->index,
+						       size, value));
+		}
+		prev = curr;
+		for (i = 0; curr->next != NULL && i < jump_size; i++)
+			curr = curr->next;
+	}
+
+	/*perform linear search in block*/
+	if (curr->index >= size || curr->n >= value)
+	{
+		printf("Value checked at index [%d] = [%d]\n",
+		       (int)curr->index, curr->n);
+		printf("Value found between indexes [%d] and [%d]\n",
+		       (int)(prev->index), (int)curr->index);
+		return (jumplist_linear_search(list, prev->index, size, value));
+	}
+	return (NULL);
 }
 
 /**
- * adv_bin_helper - searches for a value in a sorted array of integers using
- * recursive Binary Search
+ * jumplist_linear_search - searches for a value in an array of integers using
+ * the Linear search algoritm
  *
- * @array: a pointer to the first element of the array to search in
- * @start: index of starting element
- * @end: index of ending element
+ * @list: a pointer to the first element of the array to search in
+ * @start: index of upper end of jump block + 1
+ * @size: number of elements in array from breakpoint
  * @value: value to search for
- * Return:  first index where value is located or -1 if value is not
- * present in array or if array is NULL
+ * Return:  first index where value is located or -1 if value is not present
+ * in array or if array is NULL
  */
-int adv_bin_helper(int *array, size_t start, size_t end, int value)
-{
-	size_t mid;
 
-	if (start > end)
-		return (-1);
 
-	printf("Searching in array: ");
-	print_array(array, start, end);
-
-	mid = start + (end - start) / 2;
-	if (value == array[mid] && value != array[mid - 1])
-		return (mid);
-	else if (value <= array[mid])
-		return (adv_bin_helper(array, start, mid, value));
-	else
-		return (adv_bin_helper(array, mid + 1, end, value));
-}
-
-/**
- * print_array - Prints an array of integers
- *
- * @array: The array to be printed
- * @start: First element in array
- * @end: Last element in array
- */
-void print_array(const int *array, size_t start, size_t end)
+listint_t *jumplist_linear_search(listint_t *list, size_t start,
+				  size_t size, int value)
 {
 	size_t i;
+	listint_t *temp = NULL;
 
-	i = start;
-	while (array && i <= end)
+	if (list == NULL)
+		return (NULL);
+
+	temp = list;
+
+	for (i = 0; temp != NULL && temp->index < start; i++)
+		temp = temp->next;
+
+	for (i = temp->index; temp != NULL && i < size; i++)
 	{
-		if (i > start)
-			printf(", ");
-		printf("%d", array[i]);
-		++i;
+		printf("Value checked at index [%d] = [%d]\n",
+		       (int)temp->index, temp->n);
+		if (temp->n == value)
+			return (temp);
+		temp = temp->next;
 	}
-	printf("\n");
+	return (NULL);
 }
