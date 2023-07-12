@@ -1,4 +1,7 @@
 #include "search_algos.h"
+int exp_binary_search(int *array, size_t start, size_t end, int value);
+void print_array(const int *array, size_t start, size_t end);
+int find_min(int a, int b);
 
 /**
  * exponential_search - searches for a value in a sorted array of
@@ -10,6 +13,7 @@
  * Return:  first index where value is located or -1 if value is
  * not present in array or if array is NULL
  */
+
 int exponential_search(int *array, size_t size, int value)
 {
 	size_t i;
